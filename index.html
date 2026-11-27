@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>디자인 잘 뽑는 법 | 바이브코딩 디자인 팁 모음</title>
+<title>화면 요소 사전 · 용어사전 | 바이브코딩</title>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
 <style>
 /* 바이브코딩 디자인 팁 모음 — 클레이·테라코타 톤 */
@@ -448,556 +448,28 @@ footer{padding:40px;text-align:center;color:var(--ink2);font-size:13px}
 
 <div class="wrap">
 <aside class="side">
-  <div class="brand"><div class="dot">D</div><div><b>디자인 잘 뽑는 법</b><span>바이브코딩 디자인 팁 모음</span></div></div>
+  <div class="brand"><div class="dot">D</div><div><b>화면 요소 사전</b><span>바이브코딩 요소·용어 모음</span></div></div>
   <nav class="toc" id="toc">
-    <div class="toc-group">말하는 법</div>
-    <a href="#s1"><span class="n">01</span>모호한 말 버리기</a>
-    <a href="#s2"><span class="n">02</span>참고 서비스 이름 대기</a>
-    <a href="#s3"><span class="n">03</span>스크린샷 첨부하기</a>
-    <a href="#s4"><span class="n">04</span>나눠서 요청하기</a>
-    <a href="#s5"><span class="n">05</span>고칠 곳 정확히 짚기</a>
-    <a href="#s6"><span class="n">06</span>시안 여러 개 받기</a>
-    <div class="toc-group">기본기</div>
-    <a href="#s7"><span class="n">07</span>색 고르기</a>
-    <a href="#s8"><span class="n">08</span>글자 다루기</a>
-    <a href="#s9"><span class="n">09</span>여백과 정렬</a>
-    <a href="#s10"><span class="n">10</span>모서리·그림자·테두리</a>
-    <a href="#s11"><span class="n">11</span>버튼과 상태</a>
-    <a href="#s12"><span class="n">12</span>휴대폰 화면</a>
-    <a href="#s13"><span class="n">13</span>아이콘과 그림</a>
-    <a href="#s14"><span class="n">14</span>화면 속 문구</a>
-    <a href="#s15"><span class="n">15</span>누구나 보기 쉽게</a>
-    <div class="toc-group">한 단계 더</div>
-    <a href="#s16"><span class="n">16</span>AI 티 빼기</a>
-    <a href="#s17"><span class="n">17</span>스타일 키워드 12가지</a>
-    <a href="#s18"><span class="n">18</span>쓰는 사람별 색 세트</a>
-    <a href="#s19"><span class="n">19</span>규칙을 처음부터 박아 두기</a>
-    <a href="#s20"><span class="n">20</span>우리 학교 색 쓰기</a>
-    <div class="toc-group">찾아보기</div>
-    <a href="#s21"><span class="n">21</span>영감 얻는 사이트</a>
-    <a href="#s22"><span class="n">22</span>화면 요소 이름 사전</a>
-    <a href="#s23"><span class="n">23</span>용어사전</a>
-    <a href="#s24"><span class="n">24</span>내기 전 점검표</a>
+    <a href="#s22"><span class="n">01</span>화면 요소 이름 사전</a>
+    <a href="#s23"><span class="n">02</span>용어사전</a>
   </nav>
 </aside>
 
 <main>
 <header class="top">
   <div class="top-in">
-    <div class="kicker">Design Tips</div>
-    <h1>기능은 클로드가 만들고,<br><em>디자인은 말로 다듬어요</em></h1>
-    <p class="lede">«예쁘게 해 줘» 한 마디로는 매번 다른 화면이 나옵니다. 무엇을, 어떻게 바꿀지 이름과 숫자로 말하는 법, 그리고 디자이너들이 지키는 기본 규칙을 한곳에 모았어요. 프롬프트는 모두 복사해서 바로 쓸 수 있어요.</p>
-    <div class="facts"><span>팁 <b>24</b>가지</span><span>복사용 프롬프트 <b>30</b>개+</span><span>용어 <b>60</b>개</span><span>움직이는 요소 견본 <b>41</b>개</span></div>
-    <div class="flow">
-      <div><i>1</i><b>기능부터 만든다</b><small>디자인 얘기는 아직 하지 않기</small></div>
-      <div><i>2</i><b>참고를 보여 준다</b><small>서비스 이름이나 스크린샷</small></div>
-      <div><i>3</i><b>이름과 숫자로 고친다</b><small>«카드 안쪽 여백 24px로»</small></div>
-      <div><i>4</i><b>점검표로 마무리</b><small>휴대폰에서 꼭 열어 보기</small></div>
-    </div>
+    <div class="kicker">UI Dictionary</div>
+    <h1>이름을 알아야<br><em>AI에게 시킬 수 있어요</em></h1>
+    <p class="lede">바이브코딩에서 자주 헷갈리는 화면 요소와 디자인 용어를 한곳에 모았어요. 요소 칸마다 실제 모습이 움직이며 어떻게 동작하는지 보여 주고, 용어마다 클로드에게 바로 쓸 수 있는 말을 붙였어요.</p>
+    <div class="facts"><span>움직이는 화면 요소 <b>41</b>개</span><span>디자인 용어 <b>60</b>개</span></div>
   </div>
 </header>
 
-<!-- 01 -->
-<section id="s1"><div class="in">
-  <div class="label">01 · 말하는 법</div>
-  <h2>모호한 말 버리기</h2>
-  <p class="sub">«예쁜»의 기준은 사람마다 달라서, 클로드도 매번 다르게 추측해요. 바꾸고 싶은 것을 <b>대상 + 방향 + 정도</b>로 말하면 결과가 안정됩니다.</p>
-  <div class="vs">
-    <div class="x"><h4>이렇게 하지 마세요</h4><p>«예쁘게 만들어줘»</p><p>«깔끔한 디자인으로 해줘»</p><p>«모던하게 만들어줘»</p><p>«좀 더 세련되게»</p></div>
-    <div class="o"><h4>이렇게 해 보세요</h4><p>«토스 앱처럼 흰 배경에 카드형으로»</p><p>«배경은 연한 베이지, 포인트는 파란색 하나만»</p><p>«제목은 24px 굵게, 본문은 16px»</p><p>«카드 사이 간격을 지금의 두 배로»</p></div>
-  </div>
-  <h3>자주 쓰는 말, 이렇게 바꿔 말하기</h3>
-  <div class="scroll-x"><table class="tbl">
-    <tr><th>막연한 말</th><th>구체적으로</th></tr>
-    <tr><td>답답해 보여</td><td>카드 안쪽 여백을 24px로, 줄 간격을 1.7로 늘려 줘</td></tr>
-    <tr><td>촌스러워</td><td>색을 포인트 1색과 회색만 남기고, 그라데이션과 그림자를 빼 줘</td></tr>
-    <tr><td>눈에 안 띄어</td><td>«제출» 버튼만 포인트색으로 채우고, 나머지 버튼은 테두리만 남겨 줘</td></tr>
-    <tr><td>정신없어</td><td>한 화면에 보이는 버튼을 3개 이하로 줄이고, 나머지는 «더보기»로 접어 줘</td></tr>
-    <tr><td>글씨가 이상해</td><td>폰트를 Pretendard로 바꾸고, 굵기는 400·700 두 가지만 써 줘</td></tr>
-    <tr><td>휑해</td><td>화면 최대 폭을 720px로 줄이고 가운데에 놓아 줘</td></tr>
-    <tr><td>유치해</td><td>둥근 모서리를 8px로 줄이고, 원색 대신 채도 낮은 색으로 바꿔 줘</td></tr>
-    <tr><td>너무 딱딱해</td><td>모서리를 16px로 둥글게, 배경을 따뜻한 미색(#FAF7F4)으로 바꿔 줘</td></tr>
-    <tr><td>폰에서 이상해</td><td>폭 375px에서 가로 스크롤이 생기지 않게, 버튼 높이는 48px 이상으로 해 줘</td></tr>
-  </table></div>
-  <div class="note"><span class="t">숫자가 어렵다면</span>«지금보다 두 배», «조금만 더», «절반으로» 같은 비교 말도 충분히 통해요. 기준(지금 화면)이 있으니까요.</div>
-</div></section>
-
-<!-- 02 -->
-<section id="s2"><div class="in">
-  <div class="label">02 · 말하는 법</div>
-  <h2>참고 서비스 이름 대기</h2>
-  <p class="sub">잘 알려진 서비스는 클로드도 대략의 스타일을 알고 있어요. 서비스 이름에 <b>색·배치 한 줄</b>을 덧붙이면 훨씬 정확해집니다.</p>
-  <div class="chips" id="refChips"></div>
-  <div class="prompt"><div class="prompt-h">고른 서비스 프롬프트<button class="copy" data-copy="refText">복사</button></div><pre id="refText"></pre></div>
-  <div class="note warn"><span class="t">로고·이름까지 따라 하지는 않기</span>«분위기»만 빌려 오세요. 서비스 로고나 이름, 고유 그림을 그대로 넣으면 학생·학부모에게 진짜 그 서비스로 오해를 살 수 있어요.</div>
-</div></section>
-
-<!-- 03 -->
-<section id="s3"><div class="in">
-  <div class="label">03 · 말하는 법</div>
-  <h2>스크린샷 첨부하기</h2>
-  <p class="sub">말로 설명하기 어려운 분위기는 그림 한 장이 제일 빨라요. 마음에 드는 화면을 캡처해 붙이면 색·배치·글자 느낌을 따라 만들어 줍니다.</p>
-  <h3>캡처하는 법</h3>
-  <div class="scroll-x"><table class="tbl">
-    <tr><th>상황</th><th>방법</th></tr>
-    <tr><td>윈도우 화면 일부</td><td><code>Win</code> + <code>Shift</code> + <code>S</code> → 영역 끌기 → 클로드 입력창에 <code>Ctrl</code> + <code>V</code></td></tr>
-    <tr><td>맥 화면 일부</td><td><code>Cmd</code> + <code>Shift</code> + <code>4</code> → 영역 끌기</td></tr>
-    <tr><td>긴 웹페이지 전체</td><td>크롬 <code>F12</code> → <code>Ctrl</code> + <code>Shift</code> + <code>P</code> → «screenshot» 입력 → «Capture full size screenshot»</td></tr>
-    <tr><td>휴대폰 앱 화면</td><td>폰에서 캡처 → 카카오톡 «나와의 채팅»으로 PC에 보내기</td></tr>
-  </table></div>
-  <div class="prompt"><div class="prompt-h">따라 만들기<button class="copy">복사</button></div><pre>첨부한 스크린샷과 같은 스타일로 디자인을 바꿔줘.
-색상, 레이아웃, 글꼴 느낌을 최대한 비슷하게 해줘.
-기능과 내용은 지금 그대로 두고, 겉모습만 바꿔줘.</pre></div>
-  <div class="prompt"><div class="prompt-h">일부만 가져오기<button class="copy">복사</button></div><pre>첨부한 그림에서 색 조합과 버튼 모양만 가져와줘.
-배치(레이아웃)는 지금 내 화면 그대로 둬.</pre></div>
-  <div class="prompt"><div class="prompt-h">내 화면의 문제 보여 주기<button class="copy">복사</button></div><pre>첨부한 건 지금 내 앱을 휴대폰에서 연 화면이야.
-빨간 동그라미 친 곳이 글자가 잘려. 이 부분만 고쳐줘.</pre></div>
-  <div class="note good"><span class="t">한 장보다 두 장</span>«이 화면의 색»과 «저 화면의 배치»처럼 두 장을 붙이고 각각 무엇을 가져올지 말하면, 원하는 조합을 정확히 만들 수 있어요.</div>
-</div></section>
-
-<!-- 04 -->
-<section id="s4"><div class="in">
-  <div class="label">04 · 말하는 법</div>
-  <h2>한 번에 다 말하지 말고, 나눠서 요청하기</h2>
-  <p class="sub">«기능 + 디자인 + 모바일»을 한 번에 시키면 어느 하나가 흐려져요. 한 번에 한 가지씩, 대화하듯 고치는 것이 비결입니다.</p>
-  <ol class="steps">
-    <li><b>1차 · 기능</b><span>«학급 투표 웹앱 만들어줘» → 눌러 보고 잘 되는지 확인</span></li>
-    <li><b>2차 · 큰 분위기</b><span>«토스처럼 흰 배경에 파란 포인트로» → 색과 전체 느낌</span></li>
-    <li><b>3차 · 글자와 간격</b><span>«제목 크게, 카드 간격 넉넉하게» → 읽기 편하게</span></li>
-    <li><b>4차 · 휴대폰</b><span>«폭 375px에서 보기 좋게, 버튼은 엄지로 누르기 쉽게»</span></li>
-    <li><b>5차 · 마무리</b><span>«빈 화면·저장 중·오류 상태도 만들어줘» → 아래 11번 참고</span></li>
-  </ol>
-  <div class="note"><span class="t">대화가 길어지면 새 대화로</span>수정이 열 번 넘어가면 클로드가 앞의 지시를 놓치기 시작해요. 지금 코드를 통째로 붙여 넣고 «이 코드에서 이어서 고치자»로 새 대화를 여세요.</div>
-</div></section>
-
-<!-- 05 -->
-<section id="s5"><div class="in">
-  <div class="label">05 · 말하는 법</div>
-  <h2>고칠 곳 정확히 짚기</h2>
-  <p class="sub">«저 버튼»은 클로드에게 안 보여요. 위치·이름·글자로 짚어 주고, 건드리면 안 되는 곳도 함께 말해 주세요.</p>
-  <div class="scroll-x"><table class="tbl">
-    <tr><th>짚는 방법</th><th>예시</th></tr>
-    <tr><td>화면에 쓰인 글자</td><td>«‹명단 불러오기›라고 쓰인 버튼을 오른쪽으로 옮겨줘»</td></tr>
-    <tr><td>위치</td><td>«맨 위 헤더 오른쪽 끝», «두 번째 카드의 아래쪽»</td></tr>
-    <tr><td>요소 이름</td><td>«토스트», «모달», «탭» — 22번 사전 참고</td></tr>
-    <tr><td>숫자</td><td>«16px», «두 배», «#2456A6»</td></tr>
-    <tr><td>범위 묶기</td><td>«이 부분만 고치고 다른 곳은 그대로 둬»</td></tr>
-  </table></div>
-  <div class="prompt"><div class="prompt-h">범위를 묶어 고치기<button class="copy">복사</button></div><pre>‹결과 보기› 화면의 표만 고쳐줘.
-- 홀수 줄에 아주 옅은 회색 배경
-- 숫자 칸은 오른쪽 정렬
-다른 화면, 색, 기능은 절대 바꾸지 마.</pre></div>
-  <div class="prompt"><div class="prompt-h">마음에 안 들 때 되돌리기<button class="copy">복사</button></div><pre>방금 바꾼 디자인은 마음에 안 들어. 바로 전 버전으로 되돌려줘.
-대신 버튼 색만 초록색으로 바꿔줘.</pre></div>
-</div></section>
-
-<!-- 06 -->
-<section id="s6"><div class="in">
-  <div class="label">06 · 말하는 법</div>
-  <h2>시안 여러 개 받고 고르기</h2>
-  <p class="sub">어떤 게 좋을지 모를 땐 고를 거리를 만드세요. 한 화면을 서로 다른 세 가지로 받아 보면 내 취향이 보입니다.</p>
-  <div class="prompt"><div class="prompt-h">시안 세 가지<button class="copy">복사</button></div><pre>이 페이지를 3가지 다른 디자인으로 만들어줘.
-A안: 밝고 따뜻한 느낌
-B안: 차분하고 정돈된 업무용 느낌
-C안: 색이 분명하고 활기찬 느낌
-기능은 똑같이 두고, 각각 따로 완성된 코드로 줘.</pre></div>
-  <div class="prompt"><div class="prompt-h">고른 뒤 이어 가기<button class="copy">복사</button></div><pre>B안으로 가자. 근데 버튼 색만 A안의 주황색으로 바꿔줘.</pre></div>
-  <div class="note good"><span class="t">한 파일에서 바꿔 보기</span>«화면 오른쪽 위에 A·B·C 단추를 달아서 누르면 디자인이 바뀌게 해줘»라고 하면 시안 비교를 한 화면에서 할 수 있어요.</div>
-</div></section>
-
-<!-- 07 -->
-<section id="s7"><div class="in">
-  <div class="label">07 · 기본기</div>
-  <h2>색 고르기</h2>
-  <p class="sub">색 감각이 없어도 됩니다. 디자이너들이 지키는 규칙은 의외로 단순해요. <b>포인트 1색 + 회색 + 상태색</b>, 이것만 지켜도 «AI가 만든 티»의 절반이 사라집니다.</p>
-  <h3>60 · 30 · 10 규칙</h3>
-  <p>화면 넓이의 60%는 배경색, 30%는 카드·글자 같은 보조색, 10%만 포인트색으로 칠해요. 포인트색은 «가장 먼저 눌러야 할 것»에만 씁니다.</p>
-  <div class="ratio"><div style="flex:6;background:#F5EDE5;color:#5C544D">배경 60%</div><div style="flex:3;background:#fff;color:#5C544D;border-left:1px solid #E8E1DA">카드·글자 30%</div><div style="flex:1;background:#D97757;color:#fff">10%</div></div>
-  <h3>꼭 지키면 좋은 다섯 가지</h3>
-  <ul class="dots">
-    <li><b>순백(#FFFFFF) 배경 대신 아주 옅은 색</b>을 깔고 카드만 흰색으로 — 그림자 없이도 카드가 구분돼요.</li>
-    <li><b>검정(#000) 글자 대신 짙은 회갈색·남색</b>(#2B2622, #1B2A41) — 눈이 덜 피곤해요.</li>
-    <li><b>상태색은 따로 정해 두기</b> — 성공 초록, 경고 주황, 오류 빨강. 포인트색과 섞어 쓰지 않기.</li>
-    <li><b>글자와 배경의 대비 4.5 : 1 이상</b> — 연회색 글씨는 생각보다 안 보여요. 15번 참고.</li>
-    <li><b>색 개수 세기</b> — 포인트·회색·상태색 말고 다른 색이 보이면 지우기.</li>
-  </ul>
-  <h3>색 조합 가져오는 사이트</h3>
-  <div class="links">
-    <a href="https://coolors.co/palettes/trending" target="_blank" rel="noopener"><b>Coolors</b><span>스페이스바를 누르면 색 조합이 바뀌어요. 인기 조합 목록도 있어요.</span></a>
-    <a href="https://color.adobe.com/explore" target="_blank" rel="noopener"><b>Adobe Color</b><span>분위기·키워드로 검색. 사진에서 색 뽑기도 돼요.</span></a>
-    <a href="https://www.realtimecolors.com" target="_blank" rel="noopener"><b>Realtime Colors</b><span>고른 색을 실제 웹페이지에 바로 입혀 보여 줘요.</span></a>
-    <a href="https://tailwindcss.com/docs/colors" target="_blank" rel="noopener"><b>Tailwind 색표</b><span>색마다 50~950 단계가 있어 옅은 배경·짙은 글자를 고르기 쉬워요.</span></a>
-  </div>
-  <div class="prompt"><div class="prompt-h">색 코드로 지정하기<button class="copy">복사</button></div><pre>이 색 조합으로 디자인을 바꿔줘.
-- 배경 #F6F8FB, 카드 #FFFFFF, 카드 테두리 #E3E9F2
-- 글자 #1B2A41, 보조 글자 #64748B
-- 포인트 #2456A6 (주 버튼·현재 탭·링크에만)
-이 밖의 색은 쓰지 마.</pre></div>
-  <div class="prompt"><div class="prompt-h">분위기로 지정하기<button class="copy">복사</button></div><pre>따뜻한 느낌으로 바꿔줘.
-베이지 배경에 짙은 갈색 글씨, 포인트는 테라코타색 하나만.</pre></div>
-  <div class="note warn"><span class="t">다크 모드는 필요할 때만</span>학교에서 쓰는 앱은 밝은 교실·밝은 화면에서 열리는 경우가 많아요. 어두운 화면은 «밤에 보는 앱»처럼 이유가 있을 때만 고르세요.</div>
-</div></section>
-
-<!-- 08 -->
-<section id="s8"><div class="in">
-  <div class="label">08 · 기본기</div>
-  <h2>글자 다루기</h2>
-  <p class="sub">화면 디자인의 대부분은 글자예요. 크기 차이로 «무엇이 제목이고 무엇이 설명인지»만 분명하게 해도 화면이 정돈됩니다.</p>
-  <h3>크기 사다리 — 이 정도만 쓰기</h3>
-  <div class="demo">
-    <div class="type-row"><code>제목 24px / 700</code><span style="font-size:24px;font-weight:700">우리 반 투표</span></div>
-    <div class="type-row"><code>소제목 18px / 700</code><span style="font-size:18px;font-weight:700">오늘의 질문</span></div>
-    <div class="type-row"><code>본문 16px / 400</code><span style="font-size:16px">체육 시간에 하고 싶은 종목을 골라 주세요.</span></div>
-    <div class="type-row"><code>라벨 13px / 600</code><span style="font-size:13px;font-weight:600;color:#5C544D">투표 마감 · 오후 3시</span></div>
-    <div class="type-row"><code>큰 숫자 32px / 700</code><span style="font-size:32px;font-weight:700">18<small style="font-size:13px;color:#5C544D;font-weight:500;margin-left:3px">명 참여</small></span></div>
-  </div>
-  <ul class="dots">
-    <li><b>한글은 Pretendard</b>가 무난해요. 기본 글꼴 그대로 두면 윈도우·맥·폰마다 달라 보여요.</li>
-    <li><b>굵기는 두세 가지만</b> — 보통(400)과 굵게(700), 필요하면 중간(600).</li>
-    <li><b>줄 간격 1.6~1.8</b> — 한글은 영어보다 줄 간격이 넉넉해야 읽혀요.</li>
-    <li><b>한 줄 길이는 35~45자</b> — PC에서 글이 화면 끝까지 늘어지면 읽기 힘들어요. 본문 폭을 680~720px로 묶으세요.</li>
-    <li><b>가운데 정렬은 짧은 제목에만</b>. 두 줄 넘는 글은 왼쪽 정렬.</li>
-    <li><b>강조는 하나만</b> — 굵게, 색, 밑줄, 크게를 한꺼번에 쓰지 않기.</li>
-  </ul>
-  <div class="prompt"><div class="prompt-h">글자 정리<button class="copy">복사</button></div><pre>글자를 정리해줘.
-- 폰트는 Pretendard (jsdelivr CDN)
-- 제목 24px 굵게, 소제목 18px 굵게, 본문 16px, 보조 설명 13px 회색
-- 줄 간격 1.7, 본문 최대 폭 720px
-- 굵기는 400과 700만</pre></div>
-  <h3>무료 한글 글꼴 찾기</h3>
-  <div class="links">
-    <a href="https://noonnu.cc" target="_blank" rel="noopener"><b>눈누</b><span>상업적으로도 쓸 수 있는 한글 글꼴 모음. 허용 범위를 꼭 확인하세요.</span></a>
-    <a href="https://fonts.google.com/?subset=korean" target="_blank" rel="noopener"><b>Google Fonts (한국어)</b><span>웹에 링크 한 줄로 붙일 수 있는 무료 글꼴.</span></a>
-  </div>
-  <div class="note"><span class="t">손글씨 글꼴은 제목에만</span>재미있는 글꼴은 큰 제목 한두 곳에만 쓰고, 본문은 Pretendard처럼 읽기 쉬운 글꼴로 두세요.</div>
-</div></section>
-
-<!-- 09 -->
-<section id="s9"><div class="in">
-  <div class="label">09 · 기본기</div>
-  <h2>여백과 정렬</h2>
-  <p class="sub">«고급스러워 보이는 화면»의 비밀은 대부분 여백이에요. 아래 막대를 움직여 같은 카드가 여백만으로 얼마나 달라지는지 보세요.</p>
-  <div class="demo">
-    <div class="demo-ctrl">
-      <label>안쪽 여백 <input type="range" id="padR" min="6" max="36" value="10"><b id="padV">10px</b></label>
-      <label>줄 간격 <input type="range" id="lhR" min="12" max="20" value="13"><b id="lhV">1.3</b></label>
-    </div>
-    <div class="demo-stage"><div class="dcard" id="padCard" style="border-radius:14px">
-      <b>현장체험학습 신청</b>
-      <p>11월 30일(목)까지 보호자 동의서를 내 주세요. 늦게 내면 버스 좌석 배정이 어려워요.</p>
-      <button style="border-radius:10px">신청서 쓰기</button>
-    </div></div>
-  </div>
-  <ul class="dots">
-    <li><b>간격은 4의 배수로</b> — 4, 8, 12, 16, 24, 32. 아무 숫자나 쓰면 미세하게 들쭉날쭉해요.</li>
-    <li><b>가까운 것끼리 묶기</b> — 제목과 그 설명은 8px, 다른 묶음과는 24~32px. 간격만으로 «무리»가 보여요.</li>
-    <li><b>정렬선 하나</b> — 글자·버튼·카드의 왼쪽 끝을 한 줄에 맞추기.</li>
-    <li><b>화면 좌우 여백</b> — 휴대폰 16~20px, PC는 내용 최대 폭을 정해 가운데로.</li>
-    <li><b>꽉 채우지 않기</b> — 빈 공간도 디자인이에요. 넣을 게 많으면 탭이나 접기로 나누세요.</li>
-  </ul>
-  <div class="prompt"><div class="prompt-h">여백 정리<button class="copy">복사</button></div><pre>여백을 정리해줘.
-- 모든 간격은 4의 배수(8, 12, 16, 24, 32px)로
-- 카드 안쪽 여백 20px, 카드 사이 16px, 섹션 사이 32px
-- 제목과 설명은 가깝게, 다른 묶음과는 멀게
-- 모든 요소의 왼쪽 끝을 한 줄에 맞춰줘</pre></div>
-</div></section>
-
-<!-- 10 -->
-<section id="s10"><div class="in">
-  <div class="label">10 · 기본기</div>
-  <h2>모서리 · 그림자 · 테두리</h2>
-  <p class="sub">둥근 모서리와 그림자는 «분위기 조절 손잡이»예요. 아래에서 바꿔 보세요. 많이 줄수록 부드럽고 귀여워지고, 적을수록 단정하고 업무적으로 보여요.</p>
-  <div class="demo">
-    <div class="demo-ctrl">
-      <label>모서리 <input type="range" id="radR" min="0" max="28" value="14"><b id="radV">14px</b></label>
-      <label><input type="radio" name="edge" value="line" checked> 테두리</label>
-      <label><input type="radio" name="edge" value="soft"> 옅은 그림자</label>
-      <label><input type="radio" name="edge" value="heavy"> 진한 그림자</label>
-    </div>
-    <div class="demo-stage"><div class="dcard" id="edgeCard" style="padding:20px;line-height:1.6">
-      <b>2학년 3반 출석</b>
-      <p>출석 24 · 지각 1 · 결석 0</p>
-      <button>출석부 열기</button>
-    </div></div>
-  </div>
-  <ul class="dots">
-    <li><b>모서리 크기는 앱 전체에서 두 가지만</b> — 예: 버튼·입력칸 10px, 카드 14px.</li>
-    <li><b>구분은 그림자보다 1px 테두리</b>가 깔끔해요. 그림자는 떠 있는 것(팝업·하단 시트)에만.</li>
-    <li><b>카드는 정말 묶어야 할 것에만</b>. 모든 걸 카드에 넣으면 오히려 구분이 안 돼요. 목록은 줄 하나로 나누는 편이 가벼워요.</li>
-    <li><b>효과는 하나만</b> — 버튼에 그라데이션, 그림자, 마우스 올리면 커지기를 모두 넣지 않기.</li>
-  </ul>
-  <div class="prompt"><div class="prompt-h">단정하게<button class="copy">복사</button></div><pre>카드의 그림자를 모두 빼고 1px 연한 테두리로 바꿔줘.
-모서리는 카드 14px, 버튼과 입력칸 10px로 통일해줘.
-그림자는 팝업(모달)에만 남겨줘.</pre></div>
-</div></section>
-
-<!-- 11 -->
-<section id="s11"><div class="in">
-  <div class="label">11 · 기본기</div>
-  <h2>버튼과 상태</h2>
-  <p class="sub">AI가 만든 첫 화면은 «잘 될 때»만 그려져 있어요. 누르는 중, 불러오는 중, 비었을 때, 실패했을 때의 모습까지 있어야 진짜 앱처럼 보입니다.</p>
-  <h3>버튼 하나의 네 가지 얼굴</h3>
-  <div class="states">
-    <div><button class="s1">저장</button>보통</div>
-    <div><button class="s2">저장</button>누르는 중·올렸을 때</div>
-    <div><button class="s3">저장</button>키보드로 골랐을 때</div>
-    <div><button class="s4" disabled>저장</button>누를 수 없을 때</div>
-  </div>
-  <ul class="dots">
-    <li><b>한 화면에 주 버튼은 하나</b> — 가장 중요한 행동만 색을 채우고, 나머지는 테두리 버튼이나 글자 버튼.</li>
-    <li><b>지우기 같은 되돌릴 수 없는 버튼</b>은 빨간 글자로, 누르면 한 번 더 묻기.</li>
-    <li><b>버튼 글자는 동사로</b> — «확인»보다 «제출하기», «저장», «명단 보기».</li>
-    <li><b>높이 44~48px</b> — 손가락으로 누르기 편한 크기.</li>
-  </ul>
-  <h3>화면의 다섯 가지 상태</h3>
-  <div class="scroll-x"><table class="tbl">
-    <tr><th>상태</th><th>보여 줄 것</th></tr>
-    <tr><td>비었을 때</td><td>«아직 명단이 없어요» 한 문장 + «명단 추가» 버튼 하나</td></tr>
-    <tr><td>불러오는 중</td><td>회색 빈 상자(스켈레톤)나 작은 빙글이 + 버튼은 «저장 중…»으로 바꾸고 잠시 막기</td></tr>
-    <tr><td>잘 됐을 때</td><td>화면 아래 토스트 «저장했어요» 2~3초</td></tr>
-    <tr><td>실패했을 때</td><td>왜 안 됐는지 + 무엇을 하면 되는지: «인터넷이 끊겼어요. 다시 시도해 주세요»</td></tr>
-    <tr><td>너무 많을 때</td><td>긴 이름은 말줄임(…), 목록이 길면 검색칸이나 «더보기»</td></tr>
-  </table></div>
-  <div class="prompt"><div class="prompt-h">상태 화면 채우기<button class="copy">복사</button></div><pre>다음 상태 화면도 만들어줘.
-1) 데이터가 없을 때: 안내 한 문장 + 추가 버튼 하나
-2) 불러오는 중: 회색 스켈레톤
-3) 저장 버튼을 누르면 '저장 중…'으로 바뀌고 잠시 못 누르게
-4) 저장되면 화면 아래 토스트 '저장했어요' 2.5초
-5) 실패하면 원인과 다시 시도 버튼
-이모지나 그림은 넣지 마.</pre></div>
-</div></section>
-
-<!-- 12 -->
-<section id="s12"><div class="in">
-  <div class="label">12 · 기본기</div>
-  <h2>휴대폰 화면</h2>
-  <p class="sub">학생과 학부모는 거의 휴대폰으로 열어요. PC에서 예뻐도 폰에서 깨지면 소용없습니다. 처음부터 «휴대폰 먼저»라고 말해 두세요.</p>
-  <ul class="dots">
-    <li><b>기준 폭 375px</b>에서 가로 스크롤이 생기지 않아야 해요.</li>
-    <li><b>누르는 곳은 44px 이상</b>, 버튼 사이는 8px 이상 띄우기.</li>
-    <li><b>엄지가 닿는 곳</b> — 자주 누르는 버튼은 화면 아래쪽에. 맨 위 구석은 손이 잘 안 닿아요.</li>
-    <li><b>표는 폰에서 카드로</b> — 열이 4개 넘는 표는 폰에서 줄마다 카드로 바꿔 보여 주기.</li>
-    <li><b>입력칸 글자 16px 이상</b> — 그보다 작으면 아이폰이 저절로 화면을 확대해 버려요.</li>
-    <li><b>숫자 입력은 숫자 자판</b> — 번호·점수 칸은 숫자 키보드가 뜨게.</li>
-  </ul>
-  <h3>PC에서 폰 화면 미리 보기</h3>
-  <ol class="steps">
-    <li><b>크롬에서 내 앱 열기</b><span>만든 HTML 파일을 크롬 창에 끌어다 놓기</span></li>
-    <li><b><code>F12</code> 누르기</b><span>개발자 도구가 열려요</span></li>
-    <li><b><code>Ctrl</code> + <code>Shift</code> + <code>M</code></b><span>기기 모양 보기 — 위쪽 목록에서 iPhone SE(375px)나 Galaxy를 고르기</span></li>
-  </ol>
-  <div class="prompt"><div class="prompt-h">휴대폰에 맞추기<button class="copy">복사</button></div><pre>휴대폰에서 보기 좋게 고쳐줘.
-- 폭 375px에서 가로 스크롤 없이
-- 버튼 높이 48px, 누르는 곳 사이 8px 이상
-- 자주 누르는 '제출' 버튼은 화면 아래에 고정
-- 표는 폰에서는 줄마다 카드로 바꿔서
-- 입력칸 글자 16px</pre></div>
-</div></section>
-
-<!-- 13 -->
-<section id="s13"><div class="in">
-  <div class="label">13 · 기본기</div>
-  <h2>아이콘과 그림</h2>
-  <p class="sub">제목마다 이모지를 붙이는 것이 «AI가 만든 화면»의 대표 표시예요. 아이콘은 꼭 필요한 곳에만, 같은 모양 묶음으로 쓰세요.</p>
-  <div class="vs">
-    <div class="x"><h4>흔한 모습</h4><p>섹션 제목마다 다른 이모지</p><p>동그란 색 배경 위에 이모지를 얹은 장식</p><p>뜻 없는 반짝이·로켓·과녁</p></div>
-    <div class="o"><h4>정돈된 모습</h4><p>아이콘 없이 글자만, 또는</p><p>선으로 그린 아이콘 한 종류(24px, 글자색)</p><p>메뉴·버튼처럼 «알아보기 쉬워지는 곳»에만</p></div>
-  </div>
-  <h3>무료 아이콘 · 사진</h3>
-  <div class="links">
-    <a href="https://lucide.dev/icons" target="_blank" rel="noopener"><b>Lucide</b><span>선으로 그린 깔끔한 아이콘 1,000여 개. 이름만 말해도 클로드가 써요.</span></a>
-    <a href="https://tabler.io/icons" target="_blank" rel="noopener"><b>Tabler Icons</b><span>선 아이콘 모음. 교육·학교 관련 모양도 많아요.</span></a>
-    <a href="https://unsplash.com" target="_blank" rel="noopener"><b>Unsplash</b><span>무료로 쓸 수 있는 실사 사진.</span></a>
-    <a href="https://www.pexels.com/ko-kr/" target="_blank" rel="noopener"><b>Pexels</b><span>무료 사진·영상. 한국어 검색이 돼요.</span></a>
-  </div>
-  <div class="prompt"><div class="prompt-h">이모지 걷어 내기<button class="copy">복사</button></div><pre>화면의 이모지를 모두 지워줘.
-꼭 필요한 메뉴와 버튼에만 Lucide 스타일의 선 아이콘(24px, 글자색, 채우기 없음)을 SVG로 넣어줘.
-아이콘이 없어도 뜻이 통하는 곳은 글자만 둬.</pre></div>
-  <div class="note warn"><span class="t">학생 얼굴 사진은 넣지 않기</span>예시 화면에도 실제 학생 사진·실명을 쓰지 마세요. 이름은 «김하늘»처럼 가상 이름, 얼굴은 이니셜 동그라미(아바타)로 충분해요.</div>
-</div></section>
-
-<!-- 14 -->
-<section id="s14"><div class="in">
-  <div class="label">14 · 기본기</div>
-  <h2>화면 속 문구</h2>
-  <p class="sub">디자인은 글자 모양만이 아니라 «무슨 말을 쓰느냐»도 포함해요. AI는 광고처럼 들뜬 문구를 자주 넣으니, 짧고 담백하게 바꿔 달라고 하세요.</p>
-  <div class="scroll-x"><table class="tbl">
-    <tr><th>AI가 자주 쓰는 말</th><th>이렇게 바꾸기</th></tr>
-    <tr><td>스마트한 출석 관리!</td><td>출석부</td></tr>
-    <tr><td>간편하게 기록하세요 ✨</td><td>오늘 기록</td></tr>
-    <tr><td>확인</td><td>제출하기 · 저장 · 닫기 (무슨 일이 일어나는지)</td></tr>
-    <tr><td>오류가 발생했습니다</td><td>저장하지 못했어요. 인터넷 연결을 확인하고 다시 눌러 주세요.</td></tr>
-    <tr><td>데이터가 존재하지 않습니다</td><td>아직 기록이 없어요.</td></tr>
-    <tr><td>정말로 삭제하시겠습니까?</td><td>3번 학생의 기록을 지울까요? 지우면 되돌릴 수 없어요.</td></tr>
-  </table></div>
-  <ul class="dots">
-    <li>제목 끝 느낌표 빼기, 수식어(스마트한·간편한·혁신적인) 빼기.</li>
-    <li>학생용도 반말 대신 해요체. 저학년은 낱말을 쉽게 («제출» → «내기»).</li>
-    <li>같은 동작은 같은 말로 — 어떤 곳은 «저장», 어떤 곳은 «등록»이면 헷갈려요.</li>
-  </ul>
-  <div class="prompt"><div class="prompt-h">문구 다듬기<button class="copy">복사</button></div><pre>화면의 문구를 다듬어줘.
-- 광고 같은 말(스마트한, 간편하게, 느낌표) 빼고 짧고 담백하게
-- 버튼은 무슨 일이 일어나는지 동사로 ('제출하기', '저장')
-- 오류 문구는 원인 + 다음 행동으로
-- 존댓말 해요체로 통일
-디자인과 기능은 그대로 둬.</pre></div>
-</div></section>
-
-<!-- 15 -->
-<section id="s15"><div class="in">
-  <div class="label">15 · 기본기</div>
-  <h2>누구나 보기 쉽게</h2>
-  <p class="sub">한 반에는 색을 잘 구분하지 못하는 학생, 글자가 커야 보이는 할머니 보호자, 화면 읽기 프로그램을 쓰는 학생이 있을 수 있어요. 몇 가지만 챙기면 모두에게 편한 화면이 됩니다.</p>
-  <ul class="dots">
-    <li><b>색만으로 알리지 않기</b> — 빨강·초록 점만 두지 말고 «완료», «미제출» 글자를 함께.</li>
-    <li><b>대비 4.5 : 1 이상</b> — 연한 회색 글씨, 노란 배경에 흰 글씨는 피하기.</li>
-    <li><b>글자 크기 키워도 깨지지 않게</b> — 폰 설정에서 글자를 키워도 겹치지 않는지.</li>
-    <li><b>그림에는 설명</b> — 이미지마다 alt 글을 달아 화면 읽기가 읽을 수 있게.</li>
-    <li><b>키보드로도</b> — Tab 키로 이동할 때 지금 어디인지 테두리가 보이게.</li>
-    <li><b>번쩍이고 빨리 움직이는 효과 줄이기</b> — 움직임 줄이기를 켠 기기에서는 애니메이션 끄기.</li>
-  </ul>
-  <div class="links">
-    <a href="https://webaim.org/resources/contrastchecker/" target="_blank" rel="noopener"><b>WebAIM 대비 검사기</b><span>글자색과 배경색 코드를 넣으면 대비 숫자와 통과 여부를 알려 줘요.</span></a>
-  </div>
-  <div class="prompt"><div class="prompt-h">접근성 점검<button class="copy">복사</button></div><pre>이 화면을 접근성 기준으로 점검하고 고쳐줘.
-- 글자와 배경 대비 4.5:1 미만인 곳
-- 색으로만 상태를 알리는 곳 (글자 함께 표시)
-- alt 없는 이미지, 이름 없는 아이콘 버튼
-- Tab 키로 이동할 때 초점 테두리가 안 보이는 곳
-- prefers-reduced-motion일 때 애니메이션 끄기
-고친 곳 목록도 같이 알려줘.</pre></div>
-</div></section>
-
-<!-- 16 -->
-<section id="s16"><div class="in">
-  <div class="label">16 · 한 단계 더</div>
-  <h2>AI 티 빼기</h2>
-  <p class="sub">AI가 처음 만든 화면은 비슷비슷하게 생겼어요. 아래 모습이 보이면 «AI가 만들었구나» 하고 바로 알아챕니다. 하나씩 걷어 내면 실제 서비스처럼 보여요.</p>
-  <div class="scroll-x"><table class="tbl">
-    <tr><th>AI가 만든 티</th><th>대신 이렇게</th></tr>
-    <tr><td>보라→파랑 그라데이션</td><td>단색 포인트 하나. 그라데이션은 이유가 있을 때만</td></tr>
-    <tr><td>제목마다 이모지</td><td>글자만, 필요하면 선 아이콘</td></tr>
-    <tr><td>모든 것이 흰 카드+큰 그림자</td><td>옅은 배경 + 1px 테두리, 카드는 묶을 때만</td></tr>
-    <tr><td>가운데 큰 제목 + 기능 카드 3개</td><td>첫 화면부터 실제 할 일(입력칸·목록)이 보이게</td></tr>
-    <tr><td>«스마트한», «간편하게!»</td><td>담백한 이름표: «출석부», «오늘 기록»</td></tr>
-    <tr><td>보라·인디고 색</td><td>앱의 용도에 맞는 색 (18번 색 세트)</td></tr>
-    <tr><td>기본 글꼴 그대로</td><td>Pretendard</td></tr>
-    <tr><td>버튼에 효과 전부</td><td>효과는 하나만</td></tr>
-    <tr><td>이유 없는 다크 모드</td><td>학교 앱은 밝은 화면</td></tr>
-    <tr><td>카드 왼쪽 색 줄, 아래 색 띠</td><td>옅은 배경색이나 굵은 글자로 구분</td></tr>
-  </table></div>
-  <div class="prompt"><div class="prompt-h">한 번에 걷어 내기<button class="copy">복사</button></div><pre>이 화면에서 'AI가 만든 티'를 빼줘.
-- 그라데이션 배경·버튼 없애고 단색으로
-- 이모지 전부 지우기 (꼭 필요한 곳만 선 아이콘)
-- 그림자는 팝업에만, 나머지는 1px 연한 테두리
-- 카드 왼쪽 색 줄, 아래 색 띠 없애기
-- 광고 같은 문구와 느낌표 빼기
-- 폰트는 Pretendard
-- 색은 포인트 1색 + 회색 + 상태색(성공·경고·오류)만
-기능은 그대로 둬.</pre></div>
-</div></section>
-
-<!-- 17 -->
-<section id="s17"><div class="in">
-  <div class="label">17 · 한 단계 더</div>
-  <h2>스타일 키워드 12가지</h2>
-  <p class="sub">디자인에는 이름이 붙은 스타일이 있어요. 이름만 말해도 클로드가 알아서 적용합니다. 견본을 보고 마음에 드는 걸 골라 보세요.</p>
-  <div class="styles">
-    <div class="st"><div class="pv pv-mini"><div>MINIMAL</div></div><div class="tx"><b>미니멀리즘</b><span>여백 많고 요소는 최소로</span><span class="say">«미니멀하게 바꿔줘»</span></div></div>
-    <div class="st"><div class="pv pv-dash"><i>24</i><i>3</i><i>98</i></div><div class="tx"><b>대시보드</b><span>숫자와 표가 한눈에, 업무용</span><span class="say">«관리자 대시보드처럼»</span></div></div>
-    <div class="st"><div class="pv pv-bento"><i></i><i></i><i></i></div><div class="tx"><b>벤토 그리드</b><span>크기 다른 칸을 도시락처럼</span><span class="say">«벤토 박스 레이아웃으로»</span></div></div>
-    <div class="st"><div class="pv pv-flat"><div><span></span><span></span><span></span></div></div><div class="tx"><b>플랫 디자인</b><span>그림자 없이 면과 색으로만</span><span class="say">«플랫 디자인으로»</span></div></div>
-    <div class="st"><div class="pv pv-editorial"><div>Weekly</div></div><div class="tx"><b>에디토리얼</b><span>잡지처럼 큰 제목과 가는 선</span><span class="say">«잡지 같은 에디토리얼 스타일로»</span></div></div>
-    <div class="st"><div class="pv pv-paper"><div>오늘 할 일</div></div><div class="tx"><b>종이·노트</b><span>줄 공책, 포스트잇 느낌</span><span class="say">«공책과 포스트잇 느낌으로»</span></div></div>
-    <div class="st"><div class="pv pv-glass"><div></div></div><div class="tx"><b>글래스모피즘</b><span>뒤가 비치는 반투명 유리</span><span class="say">«글래스모피즘으로»</span></div></div>
-    <div class="st"><div class="pv pv-neu"><div></div></div><div class="tx"><b>뉴모피즘</b><span>부드럽게 볼록·오목한 면</span><span class="say">«뉴모피즘으로»</span></div></div>
-    <div class="st"><div class="pv pv-clay"><div></div></div><div class="tx"><b>클레이모피즘</b><span>찰흙처럼 말랑한 입체</span><span class="say">«클레이모피즘으로, 저학년용»</span></div></div>
-    <div class="st"><div class="pv pv-retro"><div>SALE 1985</div></div><div class="tx"><b>레트로</b><span>바랜 색, 굵은 외곽선</span><span class="say">«레트로 감성으로»</span></div></div>
-    <div class="st"><div class="pv pv-brutal"><div>BRUTAL</div></div><div class="tx"><b>네오 브루탈리즘</b><span>굵은 검은 선, 원색, 딱딱한 그림자</span><span class="say">«네오 브루탈리즘으로»</span></div></div>
-    <div class="st"><div class="pv pv-neon"><div>NEON</div></div><div class="tx"><b>네온·사이버펑크</b><span>어두운 바탕에 빛나는 색</span><span class="say">«다크 배경에 네온 스타일로»</span></div></div>
-  </div>
-  <div class="note"><span class="t">어울리는 곳이 따로 있어요</span>업무·기록 앱은 미니멀·대시보드·플랫, 학급 행사·게임은 레트로·브루탈리즘·클레이모피즘이 잘 어울려요. 글래스모피즘·뉴모피즘은 글자가 흐려 보이기 쉬우니 제목·장식에만 쓰는 게 안전해요.</div>
-</div></section>
-
-<!-- 18 -->
-<section id="s18"><div class="in">
-  <div class="label">18 · 한 단계 더</div>
-  <h2>쓰는 사람별 색 세트</h2>
-  <p class="sub">누가 쓸지 말해 주면 클로드가 거기 맞춰 잡아 줘요. 바로 쓸 수 있는 색 세트 세 가지를 준비했어요. 눌러서 견본을 비교해 보세요.</p>
-  <div class="chips preset-tabs" id="presetChips"></div>
-  <div class="swatches" id="presetSw"></div>
-  <div class="mock" id="presetMock"></div>
-  <div class="prompt"><div class="prompt-h">이 색 세트로 바꾸기<button class="copy" data-copy="presetText">복사</button></div><pre id="presetText"></pre></div>
-  <div class="note"><span class="t">상태색은 세 세트 공통</span>성공 #1D7A4D · 경고 #B26B0F · 오류 #C0392B. 배지 배경은 각각 #E7F3EC · #FBF0DE · #F9E8E6.</div>
-</div></section>
-
-<!-- 19 -->
-<section id="s19"><div class="in">
-  <div class="label">19 · 한 단계 더</div>
-  <h2>규칙을 처음부터 박아 두기</h2>
-  <p class="sub">앱을 여러 개 만들다 보면 매번 같은 말을 반복하게 돼요. 디자인 규칙을 한 번 정리해 두고 새 앱마다 첫 메시지에 붙이면, 처음부터 내 스타일로 나옵니다.</p>
-  <ol class="steps">
-    <li><b>아래 규칙을 복사해 내 색·글자로 고치기</b><span>18번 색 세트 중 하나를 넣어도 좋아요</span></li>
-    <li><b>클로드 «프로젝트»의 지침 칸에 붙여 두기</b><span>프로젝트 안에서 여는 대화는 모두 이 규칙을 따라요</span></li>
-    <li><b>프로젝트를 안 쓰면 새 대화 첫 메시지에 붙이기</b><span>«아래 디자인 규칙을 지켜서 만들어줘» 한 줄과 함께</span></li>
-  </ol>
-  <div class="prompt"><div class="prompt-h">내 디자인 규칙 (복사해서 고쳐 쓰기)<button class="copy">복사</button></div><pre>[디자인 규칙 — 모든 화면에 적용]
-1. 단일 HTML 파일, 휴대폰 먼저(기준 폭 375px, 가로 스크롤 없음)
-2. 폰트: Pretendard (jsdelivr CDN)
-3. 색은 CSS 변수로 정의하고 이것만 쓴다
-   --bg #F6F8FB / --card #FFFFFF / --line #E3E9F2
-   --text #1B2A41 / --sub #64748B / --point #2456A6
-   --ok #1D7A4D / --warn #B26B0F / --err #C0392B
-4. 글자: 제목 24px/700, 소제목 18px/700, 본문 16px/400(줄 간격 1.7), 라벨 13px/600
-5. 간격은 4의 배수, 화면 좌우 여백 20px
-6. 모서리: 버튼·입력 10px, 카드 14px (두 가지만)
-7. 구분은 1px 테두리, 그림자는 팝업에만
-8. 버튼 높이 48px, 한 화면에 색 채운 주 버튼 하나
-9. 금지: 그라데이션, 이모지 아이콘, 카드 왼쪽 색 줄, 광고 문구와 느낌표, 다크 모드 기본값
-10. 빈 화면·불러오는 중·저장 완료(토스트)·실패 상태를 모두 만든다</pre></div>
-  <div class="note good"><span class="t">CSS 변수가 좋은 이유</span>색을 변수로 묶어 두면 나중에 «--point만 초록으로 바꿔줘» 한 줄로 앱 전체 색이 바뀌어요. 클로드가 실수로 다른 색을 섞는 일도 줄어요.</div>
-</div></section>
-
-<!-- 20 -->
-<section id="s20"><div class="in">
-  <div class="label">20 · 한 단계 더</div>
-  <h2>우리 학교 색 쓰기</h2>
-  <p class="sub">학교 홈페이지나 교표에 쓰인 색을 알려 주면 학교다운 앱이 나와요. 학급 홈페이지, 행사 안내 페이지에 특히 좋아요.</p>
-  <h3>색 코드 알아내는 법</h3>
-  <ol class="steps">
-    <li><b>학교 로고를 캡처해서 클로드에 붙이기</b><span>«이 로고의 주요 색 코드 알려줘»</span></li>
-    <li><b>또는 Adobe Color의 «이미지에서 추출»</b><span>사진을 올리면 색 다섯 개를 뽑아 줘요</span></li>
-  </ol>
-  <div class="prompt"><div class="prompt-h">학교 색 입히기<button class="copy">복사</button></div><pre>우리 학교 대표 색은 남색(#1B3A5C)이야.
-이 색을 포인트로 쓰고, 배경은 이 색을 아주 옅게 섞은 미색으로 해줘.
-상단 헤더 왼쪽에 학교 이름 'OO중학교'를 넣어줘.
-교표 그림은 넣지 말고 글자만.</pre></div>
-  <div class="note warn"><span class="t">학교 색이 너무 진하거나 쨍할 때</span>원색 빨강·초록 같은 색은 넓게 칠하면 눈이 아파요. 헤더 글자·주 버튼처럼 좁은 곳에만 쓰고, 배경은 그 색을 아주 옅게 쓰세요.</div>
-</div></section>
-
-<!-- 21 -->
-<section id="s21"><div class="in">
-  <div class="label">21 · 찾아보기</div>
-  <h2>영감 얻는 사이트</h2>
-  <p class="sub">어떤 디자인이 좋을지 모르겠으면 둘러보세요. 마음에 드는 걸 캡처해서 클로드에 보여 주면 돼요(3번).</p>
-  <div class="links">
-    <a href="https://mobbin.com" target="_blank" rel="noopener"><b>Mobbin</b><span>실제 앱 화면 모음. 휴대폰 앱 참고에 가장 좋아요.</span></a>
-    <a href="https://dribbble.com" target="_blank" rel="noopener"><b>Dribbble</b><span>디자이너 작품 갤러리. «school app», «dashboard»로 검색.</span></a>
-    <a href="https://www.awwwards.com/websites/colorful/" target="_blank" rel="noopener"><b>Awwwards</b><span>수상작 웹사이트. 최신 흐름을 한눈에.</span></a>
-    <a href="https://onepagelove.com" target="_blank" rel="noopener"><b>One Page Love</b><span>한 페이지짜리 사이트 모음. 행사 안내 페이지 참고에.</span></a>
-    <a href="https://www.pinterest.com/search/pins/?q=web%20design%20modern" target="_blank" rel="noopener"><b>Pinterest</b><span>«web design», «app design», «dashboard ui»로 검색.</span></a>
-    <a href="https://landdding.com" target="_blank" rel="noopener"><b>Landdding</b><span>랜딩 페이지 디자인 모음. 스타일별로 골라 보기.</span></a>
-    <a href="https://www.behance.net" target="_blank" rel="noopener"><b>Behance</b><span>디자인 작업 과정까지 보여 주는 포트폴리오 모음.</span></a>
-    <a href="https://www.lapa.ninja" target="_blank" rel="noopener"><b>Lapa Ninja</b><span>분야별 랜딩 페이지. «Education» 분류가 있어요.</span></a>
-  </div>
-  <div class="note"><span class="t">검색어 팁</span>영어로 «kids learning app», «attendance dashboard», «quiz app ui», «school event landing page»처럼 «무엇 + ui/app/dashboard»로 찾으면 잘 나와요.</div>
-</div></section>
-
 <!-- 22 -->
 <section id="s22"><div class="in">
-  <div class="label">22 · 찾아보기</div>
+  <div class="label">01 · UI Elements</div>
   <h2>화면 요소 이름 사전</h2>
-  <p class="sub">이름을 알아야 시킬 수 있어요. «예쁘게»보다 «카드, 토글, 모달을 넣어줘»가 훨씬 정확합니다. 칸마다 실제 요소가 움직이며 어떻게 동작하는지 보여 줘요.</p>
+  <p class="sub">«예쁘게»보다 «카드, 토글, 모달을 넣어줘»가 훨씬 정확합니다. 칸마다 실제 요소가 움직이며 어떻게 동작하는지 보여 줘요.</p>
   <button class="pause-btn" id="elPause">움직임 멈추기</button>
   <div id="dictWrap"></div>
   <div class="prompt"><div class="prompt-h">이름으로 시키기<button class="copy">복사</button></div><pre>메뉴를 탭으로 나누고, 각 탭 안은 카드 형태로 정리해줘.
@@ -1007,7 +479,7 @@ C안: 색이 분명하고 활기찬 느낌
 
 <!-- 23 -->
 <section id="s23"><div class="in">
-  <div class="label">23 · 찾아보기</div>
+  <div class="label">02 · Glossary</div>
   <h2>용어사전</h2>
   <p class="sub">클로드에게 요청할 때 알아 두면 좋은 말들이에요. 검색해 보세요.</p>
   <input class="search" id="termQ" type="search" placeholder="예: 여백, 고정, 대비">
@@ -1016,89 +488,13 @@ C안: 색이 분명하고 활기찬 느낌
   <p class="empty" id="termEmpty">찾는 말이 없어요. 다른 낱말로 검색해 보세요.</p>
 </div></section>
 
-<!-- 24 -->
-<section id="s24"><div class="in">
-  <div class="label">24 · 찾아보기</div>
-  <h2>내기 전 점검표</h2>
-  <p class="sub">학생·학부모에게 링크를 보내기 전에 하나씩 눌러 확인하세요. 체크한 내용은 이 브라우저에 남아요.</p>
-  <p class="check-count"><b id="ckN">0</b> / <span id="ckT">0</span> 확인<button class="reset" id="ckReset">처음부터</button></p>
-  <ul class="check" id="ck"></ul>
-  <div class="prompt"><div class="prompt-h">클로드에게 점검 맡기기<button class="copy">복사</button></div><pre>이 앱을 내보내기 전에 디자인 점검을 해줘.
-1) 375px 폭에서 가로 스크롤이나 잘리는 글자
-2) 포인트색·회색·상태색 말고 쓰인 색
-3) 모서리 크기 종류 수, 그림자 쓰인 곳
-4) 이모지, 그라데이션, 광고 문구
-5) 대비 4.5:1 미만인 글자
-6) 빈 화면·불러오는 중·실패 상태가 있는지
-문제 목록을 먼저 보여주고, 고쳐도 되는지 물어봐.</pre></div>
-</div></section>
-
-<footer>디자인 잘 뽑는 법 · 바이브코딩 디자인 팁 모음 · 2026. 11.</footer>
+<footer>화면 요소 사전 · 용어사전 · 2026. 11.</footer>
 </main>
 </div>
 
 <div class="toast" id="toast">복사했어요</div>
 
 <script>
-/* 참고 서비스 */
-const REFS=[
- ["토스","토스(toss) 스타일로 디자인 바꿔줘.\n흰 배경에 카드형 UI, 파란색 포인트 하나, 큰 숫자와 넉넉한 여백으로."],
- ["당근","당근마켓 스타일로 디자인 바꿔줘.\n흰 배경에 주황색 포인트, 목록형 레이아웃, 따뜻하고 친근한 느낌으로."],
- ["네이버","네이버 스타일로 디자인 바꿔줘.\n초록색 포인트, 정보가 촘촘하게 잘 정리된 목록·카드형 레이아웃으로."],
- ["카카오","카카오 스타일로 디자인 바꿔줘.\n노란색 포인트, 둥글둥글한 버튼, 친근한 말투로."],
- ["애플","애플 홈페이지 스타일로 디자인 바꿔줘.\n흰·연회색 배경에 여백 아주 많이, 큰 굵은 제목, 고급스러운 느낌으로."],
- ["노션","노션(Notion) 스타일로 디자인 바꿔줘.\n흰 배경, 거의 흑백, 글자 중심의 문서 같은 레이아웃으로."],
- ["인스타그램","인스타그램 스타일로 디자인 바꿔줘.\n흰 배경에 정사각형 사진 격자, 위아래로 넘기는 피드 레이아웃으로."],
- ["배민","배달의민족 스타일로 디자인 바꿔줘.\n민트색 포인트, 굵고 재미있는 제목 글씨, 유쾌한 말투로."],
- ["구글","구글 스타일(머티리얼 디자인)로 바꿔줘.\n흰 배경, 파란 포인트, 둥근 알약 모양 버튼, 단정한 아이콘으로."],
- ["에어비앤비","에어비앤비 스타일로 디자인 바꿔줘.\n흰 배경에 큰 사진 카드, 둥근 모서리, 분홍빛 빨간 포인트로."],
- ["리니어","리니어(Linear) 스타일로 디자인 바꿔줘.\n어두운 회색 배경, 얇은 테두리, 작고 단정한 글자, 업무 도구 느낌으로."],
- ["듀오링고","듀오링고 스타일로 디자인 바꿔줘.\n초록 포인트, 두툼한 입체 버튼, 진도·연속 기록이 크게 보이는 학습 앱 느낌으로."]
-];
-const refChips=document.getElementById('refChips'),refText=document.getElementById('refText');
-REFS.forEach((r,i)=>{const b=document.createElement('button');b.className='chip'+(i?'':' on');b.textContent=r[0];
- b.onclick=()=>{refChips.querySelectorAll('.chip').forEach(c=>c.classList.remove('on'));b.classList.add('on');refText.textContent=r[1]};refChips.appendChild(b)});
-refText.textContent=REFS[0][1];
-
-/* 색 세트 */
-const PRESETS=[
- {name:"교사·업무용 «잉크»",who:"선생님들이 업무용으로",mood:"차분하고 믿음직한 느낌. 표와 목록이 주인공이고 포인트색은 현재 탭·주 버튼·링크에만.",
-  c:{point:"#2456A6",bg:"#F6F8FB",card:"#FFFFFF",line:"#E3E9F2",text:"#1B2A41",sub:"#64748B"},
-  title:"2학년 3반 출결",desc:"출석 24 · 지각 1 · 결석 0",btn:"출석부 열기",tag:"오늘"},
- {name:"학생용 «활기»",who:"중·고등학생들이",mood:"따뜻하고 경쾌한 느낌. 큰 숫자와 포인트·레벨 표시는 과감하게 키우되 색은 여전히 포인트 1색.",
-  c:{point:"#E05A1E",bg:"#FBF6F1",card:"#FFFFFF",line:"#EFE2D6",text:"#2E2418",sub:"#8A796A"},
-  title:"이번 주 독서 포인트",desc:"120점 · 반에서 5번째",btn:"기록 남기기",tag:"+15"},
- {name:"초등·학부모용 «포근»",who:"초등 저학년과 학부모님들이",mood:"부드럽고 쉬운 느낌. 글자를 한 단계 키우고(본문 16px 이상) 문장을 짧게.",
-  c:{point:"#D25980",bg:"#FCF6F8",card:"#FFFFFF",line:"#F1DEE6",text:"#38222B",sub:"#957A85"},
-  title:"내일 준비물",desc:"색연필, 가위, 풀",btn:"확인했어요",tag:"알림장"}
-];
-const LBL={point:"포인트",bg:"배경",line:"테두리",text:"글자",sub:"보조 글자"};
-const pChips=document.getElementById('presetChips');
-function showPreset(i){const p=PRESETS[i],c=p.c;
- pChips.querySelectorAll('.chip').forEach((x,j)=>x.classList.toggle('on',j===i));
- document.getElementById('presetSw').innerHTML=Object.keys(LBL).map(k=>`<div class="sw"><i style="background:${c[k]}"></i><span>${LBL[k]}<small>${c[k]}</small></span></div>`).join('');
- document.getElementById('presetMock').style.background=c.bg;
- document.getElementById('presetMock').style.borderColor=c.line;
- document.getElementById('presetMock').innerHTML=`<div class="mh" style="color:${c.sub}">견본 · ${p.mood}</div><div class="mc" style="background:${c.card};border-color:${c.line}"><b style="color:${c.text}">${p.title}<span class="mtag" style="background:${c.bg};color:${c.point};border:1px solid ${c.line}">${p.tag}</span></b><small style="color:${c.sub}">${p.desc}</small><span class="mbtn" style="background:${c.point}">${p.btn}</span></div>`;
- document.getElementById('presetText').textContent=`이걸 ${p.who} 쓸 거야. 색을 이렇게 바꿔줘.\n- 배경 ${c.bg}, 카드 ${c.card}, 카드 테두리 ${c.line}\n- 글자 ${c.text}, 보조 글자 ${c.sub}\n- 포인트 ${c.point} (주 버튼·현재 탭·링크에만)\n- 상태색: 성공 #1D7A4D, 경고 #B26B0F, 오류 #C0392B\n분위기: ${p.mood}`;
-}
-PRESETS.forEach((p,i)=>{const b=document.createElement('button');b.className='chip';b.textContent=p.name;b.onclick=()=>showPreset(i);pChips.appendChild(b)});
-showPreset(0);
-
-/* 여백 데모 */
-const padR=document.getElementById('padR'),lhR=document.getElementById('lhR'),padCard=document.getElementById('padCard');
-function upPad(){padCard.style.padding=padR.value+'px';padCard.style.lineHeight=(lhR.value/10).toFixed(1);
- document.getElementById('padV').textContent=padR.value+'px';document.getElementById('lhV').textContent=(lhR.value/10).toFixed(1)}
-padR.oninput=lhR.oninput=upPad;upPad();
-
-/* 모서리 데모 */
-const radR=document.getElementById('radR'),edgeCard=document.getElementById('edgeCard');
-function upEdge(){const r=+radR.value;edgeCard.style.borderRadius=r+'px';edgeCard.querySelector('button').style.borderRadius=Math.max(0,Math.round(r*.7))+'px';
- document.getElementById('radV').textContent=r+'px';const m=document.querySelector('input[name=edge]:checked').value;
- edgeCard.style.border=m==='line'?'1px solid #E8E1DA':'1px solid transparent';
- edgeCard.style.boxShadow=m==='soft'?'0 1px 3px rgba(0,0,0,.08)':m==='heavy'?'0 14px 36px rgba(0,0,0,.18)':'none'}
-radR.oninput=upEdge;document.querySelectorAll('input[name=edge]').forEach(x=>x.onchange=upEdge);upEdge();
-
 /* 요소 사전 — 칸마다 움직이는 실제 견본 */
 const SV={
  lens:'<svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>',
@@ -1239,16 +635,6 @@ function drawTerms(){const s=q.value.trim().toLowerCase();
  document.getElementById('termEmpty').style.display=list.length?'none':'block'}
 q.oninput=drawTerms;drawTerms();
 
-/* 점검표 */
-const CK=["휴대폰(375px)에서 열어 가로 스크롤이 없다","버튼·누르는 곳이 손가락으로 누르기 충분히 크다(44px+)","포인트색 + 회색 + 상태색 말고 다른 색이 없다","그라데이션·이모지·카드 왼쪽 색 줄이 없다","글꼴이 Pretendard로 보인다","제목·본문·보조 글자의 크기 차이가 분명하다","모서리 크기가 두 가지 이하로 통일돼 있다","한 화면에 색 채운 주 버튼이 하나다","연한 글씨도 잘 읽힌다(대비 4.5:1)","색만이 아니라 글자로도 상태를 알린다","빈 화면·불러오는 중·저장 완료·실패 상태가 있다","광고 같은 문구와 느낌표가 없다","예시에 실제 학생 이름·사진이 없다","다른 사람 폰(아이폰·갤럭시)에서도 열어 봤다"];
-const ckEl=document.getElementById('ck'),KEY='designTipsChecklist';let saved={};
-try{saved=JSON.parse(localStorage.getItem(KEY)||'{}')}catch(e){}
-function drawCk(){ckEl.innerHTML=CK.map((t,i)=>`<li class="${saved[i]?'ok':''}"><label><input type="checkbox" data-i="${i}" ${saved[i]?'checked':''}><span>${t}</span></label></li>`).join('');
- document.getElementById('ckN').textContent=Object.values(saved).filter(Boolean).length;document.getElementById('ckT').textContent=CK.length}
-ckEl.addEventListener('change',e=>{const i=e.target.dataset.i;if(i==null)return;saved[i]=e.target.checked;try{localStorage.setItem(KEY,JSON.stringify(saved))}catch(err){}drawCk()});
-document.getElementById('ckReset').onclick=()=>{saved={};try{localStorage.removeItem(KEY)}catch(e){}drawCk()};
-drawCk();
-
 /* 복사 */
 const toast=document.getElementById('toast');let tt;
 function showToast(m){toast.textContent=m;toast.classList.add('show');clearTimeout(tt);tt=setTimeout(()=>toast.classList.remove('show'),2200)}
@@ -1262,7 +648,7 @@ document.addEventListener('click',async e=>{const b=e.target.closest('.copy');if
 /* 목차 */
 const links=[...document.querySelectorAll('#toc a')],secs=links.map(a=>document.querySelector(a.getAttribute('href')));
 const mnav=document.getElementById('mnav');
-mnav.innerHTML='<option value="">목차 — 원하는 팁으로 이동</option>'+links.map(a=>`<option value="${a.getAttribute('href')}">${a.textContent.trim().replace(/^(\d+)/,'$1 ')}</option>`).join('');
+mnav.innerHTML='<option value="">목차 — 이동할 곳 고르기</option>'+links.map(a=>`<option value="${a.getAttribute('href')}">${a.textContent.trim().replace(/^(\d+)/,'$1 ')}</option>`).join('');
 mnav.onchange=()=>{if(mnav.value){document.querySelector(mnav.value).scrollIntoView({behavior:'smooth'})}};
 const io=new IntersectionObserver(es=>{es.forEach(en=>{if(en.isIntersecting){const id='#'+en.target.id;links.forEach(a=>a.classList.toggle('on',a.getAttribute('href')===id));mnav.value=id}})},{rootMargin:'-30% 0px -60% 0px'});
 secs.forEach(s=>s&&io.observe(s));
