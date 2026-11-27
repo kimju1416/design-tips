@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>UI 요소 사전 — 이름을 알면 AI가 알아듣는다</title>
-<meta name="description" content="바이브코딩에서 꼭 아는 화면 요소 128가지와 디자인 용어 155개. 칸마다 실제 요소가 움직이며 보여 주고, 이름으로 찾거나 가나다순으로 훑어볼 수 있어요.">
+<meta name="description" content="바이브코딩에서 꼭 아는 화면 요소 152가지와 디자인 용어 175개. 칸마다 실제 요소가 움직이며 보여 주고, 이름으로 찾거나 가나다순으로 훑어볼 수 있어요.">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
 <style>
 :root{
@@ -801,6 +801,139 @@ footer{border-top:1px solid var(--hair);padding:40px 5vw 60px;color:var(--mut);f
 }
 @media (max-width:380px){.pv2>.zoom{transform:scale(.9)}}
 
+/* ===== 추가 견본 (v5) ===== */
+.e-files{width:150px;display:grid;gap:6px}
+.e-files p{margin:0;display:flex;gap:7px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:9px;padding:6px 8px;font-size:11px;font-weight:700;text-align:left}
+.e-files p>i{font-style:normal;font-size:8px;font-weight:900;color:#fff;background:var(--c);border-radius:4px;padding:3px}
+.e-files span{flex:1;display:grid;gap:4px}
+.e-files b{display:block;height:4px;border-radius:2px;background:#EEE8E2;position:relative;overflow:hidden}
+.e-files b::after{content:"";position:absolute;inset:0;background:var(--c);transform-origin:left;animation:eFill 3s infinite;animation-delay:inherit}
+@keyframes eFill{0%{transform:scaleX(0)}60%,90%{transform:scaleX(1)}100%{transform:scaleX(0)}}
+.e-chk{width:118px;text-align:left;font-size:13px;font-weight:700;display:grid;gap:7px}
+.e-chk p{margin:0;display:flex;align-items:center;gap:8px;transition:.3s}
+.e-chk i{width:16px;height:16px;border-radius:5px;border:2px solid #CFC6BD;position:relative;transition:.3s;flex-shrink:0}
+.e-chk p.on{color:var(--ink2);text-decoration:line-through}
+.e-chk p.on i{background:var(--c);border-color:var(--c)}
+.e-chk p.on i::after{content:"";position:absolute;left:3.5px;top:0;width:4px;height:8px;border:solid #fff;border-width:0 2px 2px 0;transform:rotate(45deg)}
+.e-sort{position:relative;width:132px;height:86px}
+.e-sort p{position:absolute;left:0;right:0;height:26px;margin:0;background:#fff;border:1px solid var(--line);border-radius:8px;display:flex;align-items:center;gap:7px;padding:0 8px;font-size:12px;font-weight:700}
+.e-sort i{font-style:normal;color:#B9AFA5;font-size:10px;letter-spacing:-2px}
+.e-sort .a{top:0;z-index:2;animation:eSoA 3.6s cubic-bezier(.65,0,.35,1) infinite}
+.e-sort .b{top:30px;animation:eSoB 3.6s cubic-bezier(.65,0,.35,1) infinite}
+.e-sort .z{top:60px}
+@keyframes eSoA{0%,15%{transform:none;box-shadow:none}25%{transform:scale(1.06);box-shadow:0 8px 16px rgba(0,0,0,.15);border-color:var(--c)}45%{transform:translateY(30px) scale(1.06);box-shadow:0 8px 16px rgba(0,0,0,.15);border-color:var(--c)}52%,85%{transform:translateY(30px)}100%{transform:none}}
+@keyframes eSoB{0%,25%{transform:none}45%,85%{transform:translateY(-30px)}100%{transform:none}}
+.e-addr{position:relative;transform:translateY(-22px)}
+.e-addr .ls{position:absolute;top:40px;left:0;right:0;background:#fff;border:1px solid #D6CDC4;border-radius:9px;padding:3px;font-size:11px;text-align:left;transform-origin:top;animation:eOpen 3.4s infinite;box-shadow:0 8px 18px rgba(0,0,0,.1)}
+.e-addr .ls p{margin:0;padding:3px 7px;border-radius:5px}
+.e-addr .ls p:first-child{background:var(--cs)}
+.e-addr .ls b{display:block;font-size:9px;color:var(--cd)}
+.scr .fsx{position:absolute;left:30px;top:18px;width:50px;height:36px;border-radius:5px;background:var(--c);z-index:2;animation:eFs 3.4s cubic-bezier(.65,0,.35,1) infinite}
+@keyframes eFs{0%,20%{left:30px;top:18px;width:50px;height:36px;border-radius:5px}40%,80%{left:0;top:0;width:110px;height:74px;border-radius:0}100%{left:30px;top:18px;width:50px;height:36px;border-radius:5px}}
+.scr .rzt{position:absolute;left:0;right:0;top:0;background:var(--cs);border-bottom:2px solid var(--c);animation:eRz 3.4s ease-in-out infinite}
+.scr .rzh{position:absolute;left:44px;width:24px;height:6px;border-radius:3px;background:var(--c);margin-top:-2px;z-index:2;animation:eRzH 3.4s ease-in-out infinite}
+@keyframes eRz{0%,100%{height:26px}50%{height:52px}}
+@keyframes eRzH{0%,100%{top:26px}50%{top:52px}}
+.scr .csb{position:absolute;left:0;top:0;bottom:0;background:var(--cs);border-right:1px solid color-mix(in srgb,var(--c) 40%,#fff);padding:9px 5px;display:grid;align-content:start;gap:8px;overflow:hidden;z-index:2;animation:eCsb 3.4s cubic-bezier(.65,0,.35,1) infinite}
+.scr .csb i{height:6px;border-radius:3px;background:var(--c)}
+@keyframes eCsb{0%,20%{width:40px}40%,80%{width:16px}100%{width:40px}}
+.e-upr{width:150px;background:#fff;border:1px solid var(--line);border-radius:11px;padding:9px 11px;text-align:left}
+.e-upr small{display:block;font-size:11px;font-weight:800;position:relative;height:15px}
+.e-upr small span{position:absolute;left:0;top:0;white-space:nowrap}
+.e-upr small span:first-child{animation:eCp1 3.2s infinite}
+.e-upr small span+span{color:#2B8A3E;animation:eCp2 3.2s infinite}
+.e-upr>i{display:block;height:6px;border-radius:3px;background:#EEE8E2;margin-top:7px;overflow:hidden}
+.e-upr>i::after{content:"";display:block;height:100%;background:var(--c);transform-origin:left;animation:eUpr 3.2s ease-out infinite}
+@keyframes eUpr{0%{transform:scaleX(0)}42%,90%{transform:scaleX(1)}100%{transform:scaleX(0)}}
+.scr .ofa,.scr .ofb{position:absolute;left:0;right:0;bottom:0;height:17px;font-size:8px;font-weight:800;color:#fff;display:flex;align-items:center;justify-content:center}
+.scr .ofa{background:#495057;animation:eOfa 4s infinite}
+.scr .ofb{background:#2B8A3E;animation:eOfb 4s infinite}
+@keyframes eOfa{0%,8%{transform:translateY(100%)}16%,56%{transform:none}57%,100%{transform:translateY(100%)}}
+@keyframes eOfb{0%,50%{transform:translateY(100%)}55%,80%{transform:none}90%,100%{transform:translateY(100%)}}
+.e-svw{display:grid;gap:8px;justify-items:start}
+.e-save{position:relative;width:120px;height:20px;font-size:12.5px;font-weight:700;color:var(--ink2)}
+.e-save span{position:absolute;left:2px;top:0;display:flex;align-items:center;gap:6px;white-space:nowrap}
+.e-save .s1{animation:eS1 3s infinite}
+.e-save .s1 i{width:12px;height:12px;border-radius:50%;border:2px solid #CFC6BD;border-top-color:var(--c);animation:eSpin .7s linear infinite}
+.e-save .s2{color:#2B8A3E;animation:eS2 3s infinite}
+.scr .ck{position:absolute;left:5px;right:5px;bottom:5px;background:#26231F;color:#fff;border-radius:6px;padding:5px 6px;font-size:7.5px;display:flex;gap:4px;align-items:center;z-index:2;animation:eCk 3.6s cubic-bezier(.34,1.56,.64,1) infinite}
+.scr .ck span{flex:1}
+.scr .ck b{font-weight:800;padding:2px 5px;border-radius:4px;background:#4A4540}
+.scr .ck b.y{background:var(--c)}
+@keyframes eCk{0%,10%{transform:translateY(150%)}22%,80%{transform:none}92%,100%{transform:translateY(150%)}}
+.e-cmp{width:150px;background:#fff;border:1px solid var(--line);border-radius:10px;padding:3px;font-size:11px}
+.e-cmp>div{display:grid;grid-template-columns:1.1fr 1fr 1fr;text-align:center;border-top:1px solid #F1ECE6}
+.e-cmp>div>span{padding:4px 0}
+.e-cmp>.h{border-top:none;font-weight:900}
+.e-cmp>div>span:first-child{text-align:left;padding-left:6px;color:var(--ink2);font-weight:700}
+.e-cmp .pk{color:var(--cd);font-weight:800;animation:ePk 3s infinite}
+@keyframes ePk{0%,30%{background:transparent}40%,85%{background:var(--cs)}100%{background:transparent}}
+.e-price{width:122px;background:#fff;border:2px solid var(--c);border-radius:14px;padding:13px 10px 10px;text-align:center;position:relative;animation:eLift 3s ease-in-out infinite}
+.e-price em{position:absolute;top:-10px;left:50%;transform:translateX(-50%);background:var(--c);color:#fff;font-style:normal;font-size:10px;font-weight:900;padding:2px 9px;border-radius:999px}
+.e-price small{display:block;font-size:11px;color:var(--ink2);font-weight:700}
+.e-price b{display:block;font-size:22px;font-weight:900;letter-spacing:-.03em;margin:2px 0 6px}
+.e-price b span{font-size:10px;color:var(--ink2);font-weight:700}
+.e-price i{display:block;font-style:normal;background:var(--c);color:#fff;border-radius:8px;font-size:11.5px;font-weight:800;padding:5px 0}
+.e-faq{width:160px;background:#fff;border:1px solid var(--line);border-radius:10px;padding:2px 10px;text-align:left;font-size:11.5px;font-weight:800}
+.e-faq .q{display:flex;align-items:center;gap:6px;padding:6px 0}
+.e-faq p+.q{border-top:1px solid #F1ECE6}
+.e-faq .q b{color:var(--c)}
+.e-faq .q i{margin-left:auto;font-style:normal;font-size:15px;line-height:1;color:var(--ink2);animation:eFqI 3.4s infinite}
+.e-faq p{margin:0;font-weight:500;color:var(--ink2);font-size:11px;overflow:hidden;animation:eFqP 3.4s infinite}
+@keyframes eFqI{0%,15%{transform:none}25%,75%{transform:rotate(45deg)}85%,100%{transform:none}}
+@keyframes eFqP{0%,15%{max-height:0;padding-bottom:0}25%,75%{max-height:40px;padding-bottom:7px}85%,100%{max-height:0;padding-bottom:0}}
+.e-log{width:150px;text-align:left;font-size:11.5px;display:grid;gap:6px;border-left:2px solid #E6E1DB;padding-left:11px}
+.e-log p{margin:0;position:relative;font-weight:600;white-space:nowrap}
+.e-log p::before{content:"";position:absolute;left:-16px;top:4px;width:8px;height:8px;border-radius:50%;background:#CFC6BD}
+.e-log b{font-size:10px;font-weight:900;background:#F1ECE6;border-radius:4px;padding:1px 5px;margin-right:5px}
+.e-log .nw{animation:eNw 3.6s cubic-bezier(.34,1.56,.64,1) infinite both}
+.e-log .nw::before{background:var(--c)}
+.e-log .nw b{background:var(--c);color:#fff}
+@keyframes eNw{0%,10%{opacity:0;transform:translateY(-8px)}22%,85%{opacity:1;transform:none}100%{opacity:0}}
+.e-how{display:flex;align-items:flex-start;gap:3px;font-size:10.5px;font-weight:800;text-align:center}
+.e-how>div{width:46px;display:grid;justify-items:center;gap:4px;color:var(--ink2);transition:.3s}
+.e-how b{width:28px;height:28px;border-radius:50%;border:2px solid #D6CDC4;display:grid;place-items:center;font-size:13px;color:var(--ink2);background:#fff;transition:.35s cubic-bezier(.34,1.56,.64,1)}
+.e-how>div.on{color:var(--ink)}
+.e-how>div.on b{background:var(--c);border-color:var(--c);color:#fff;transform:scale(1.15)}
+.e-how em{font-style:normal;color:#CFC6BD;margin-top:7px}
+.scr .scta{position:absolute;left:8px;right:8px;bottom:6px;height:16px;border-radius:5px;background:var(--c);color:#fff;font-size:8px;font-weight:800;display:grid;place-items:center;z-index:2;box-shadow:0 -6px 10px #fff}
+.e-all{width:120px;text-align:left;font-size:12px;font-weight:700}
+.e-all p{margin:0;display:flex;gap:8px;align-items:center;padding:3px 0}
+.e-all .h{border-bottom:1px solid var(--line);padding-bottom:6px;margin-bottom:3px;font-weight:900}
+.e-all i{width:15px;height:15px;border-radius:4px;border:2px solid #CFC6BD;position:relative;flex-shrink:0;animation:eAllB 3.4s infinite}
+.e-all i::after{content:"";position:absolute;left:3.5px;top:0;width:4px;height:8px;border:solid #fff;border-width:0 2px 2px 0;transform:rotate(45deg) scale(0);animation:eAllC 3.4s infinite}
+.e-all p:not(.h) i,.e-all p:not(.h) i::after{animation-delay:.12s}
+@keyframes eAllB{0%,30%{background:transparent;border-color:#CFC6BD}36%,85%{background:var(--c);border-color:var(--c)}92%,100%{background:transparent;border-color:#CFC6BD}}
+@keyframes eAllC{0%,30%{transform:rotate(45deg) scale(0)}38%,85%{transform:rotate(45deg) scale(1)}92%,100%{transform:rotate(45deg) scale(0)}}
+.e-stk{display:flex;gap:9px;align-items:flex-end;height:80px;border-bottom:1.5px solid #D6CDC4;padding:0 6px}
+.e-stk>div{width:18px;height:100%;display:flex;flex-direction:column-reverse;transform-origin:bottom;animation:eStk 3.4s cubic-bezier(.34,1.56,.64,1) infinite both}
+.e-stk i{display:block;border-top:1.5px solid #fff}
+@keyframes eStk{0%{transform:scaleY(0)}30%,85%{transform:scaleY(1)}100%{transform:scaleY(0)}}
+.e-sct svg{width:140px;height:84px}
+.e-sct .ax{stroke:#D6CDC4;stroke-width:1.5}
+.e-sct .tr{stroke:var(--c);stroke-width:2;stroke-dasharray:4 4;opacity:.7}
+.e-sct circle{fill:var(--c);transform-box:fill-box;transform-origin:center;animation:eDotP 3.6s cubic-bezier(.34,1.56,.64,1) infinite both}
+@keyframes eDotP{0%{transform:scale(0)}15%,85%{transform:scale(1)}100%{transform:scale(0)}}
+.e-rad svg{width:100px;height:92px}
+.e-rad .g{fill:none;stroke:#E6E1DB;stroke-width:1}
+.e-rad .v{fill:color-mix(in srgb,var(--c) 30%,transparent);stroke:var(--c);stroke-width:2;stroke-linejoin:round;transform-origin:50px 48px;animation:eRad 3.4s cubic-bezier(.34,1.56,.64,1) infinite both}
+@keyframes eRad{0%{transform:scale(0) rotate(-30deg)}30%,85%{transform:none}100%{transform:scale(0)}}
+.e-fun{width:150px;display:grid;justify-items:center;gap:3px}
+.e-fun i{height:18px;border-radius:4px;background:color-mix(in srgb,var(--c) var(--o),#fff);color:#fff;font-style:normal;font-size:10px;font-weight:800;display:grid;place-items:center;white-space:nowrap;animation:eFun 3.6s cubic-bezier(.34,1.56,.64,1) infinite both}
+@keyframes eFun{0%{transform:scaleX(0)}20%,85%{transform:none}100%{transform:scaleX(0)}}
+.scr .snp{position:absolute;left:0;right:0;top:0;animation:eSnp 4.5s infinite}
+.scr .snp i{display:block;height:74px;border-bottom:2px solid #fff;background:var(--cs)}
+.scr .snp i:nth-child(2){background:var(--c)}
+.scr .snp i:nth-child(3){background:color-mix(in srgb,var(--c) 45%,#fff)}
+@keyframes eSnp{0%,18%{transform:none}28%{transform:translateY(-82px)}34%,51%{transform:translateY(-76px)}61%{transform:translateY(-158px)}67%,84%{transform:translateY(-152px)}94%,100%{transform:none}}
+.scr .pgA,.scr .pgB{position:absolute;inset:0}
+.scr .pgA{background:#fff;animation:ePgA 3.6s cubic-bezier(.65,0,.35,1) infinite}
+.scr .pgB{background:var(--cs);animation:ePgB 3.6s cubic-bezier(.65,0,.35,1) infinite;box-shadow:-6px 0 12px rgba(0,0,0,.08)}
+.scr .pgB .ln{background:color-mix(in srgb,var(--c) 35%,#fff)}
+@keyframes ePgA{0%,25%{transform:none;opacity:1}45%,80%{transform:translateX(-30%);opacity:.4}100%{transform:none;opacity:1}}
+@keyframes ePgB{0%,25%{transform:translateX(100%)}45%,80%{transform:none}100%{transform:translateX(100%)}}
+@media (max-width:820px){.pv2>.zoom:has(.e-faq,.e-how,.e-cmp,.e-files,.e-log,.e-fun,.e-upr){transform:scale(.8)}}
+
 /* ===== 폰 다듬기 (v4) ===== */
 *{-webkit-tap-highlight-color:transparent}
 .rotw{white-space:nowrap}
@@ -1225,6 +1358,70 @@ const TERMS2=[
  ["꿀팁","실제 내용","Real Content","예시 글 대신 실제로 쓸 내용으로 만들기","예시 글 말고 실제 학급 공지 문장으로 채워줘"]
 ];
 TERMS.push(...TERMS2);
+
+/* ---------- v5: 요소 더하기 ---------- */
+function radar(){const P=(r,v)=>[0,1,2,3,4,5].map(k=>{const a=(-90+60*k)*Math.PI/180,rr=r*(v?v[k]:1);return (50+rr*Math.cos(a)).toFixed(1)+','+(48+rr*Math.sin(a)).toFixed(1)}).join(' ');
+ return `<svg viewBox="0 0 100 92">${[38,25,12].map(r=>`<polygon class="g" points="${P(r)}"/>`).join('')}<polygon class="v" points="${P(38,[.9,.6,.8,.45,.75,.55])}"/></svg>`}
+const SCT=[[18,66],[30,60],[38,64],[52,52],[60,46],[72,48],[84,36],[96,38],[106,26],[120,22],[128,16],[46,40],[90,56]];
+const ADD5={
+ 0:[
+  ["파일 목록","File List","올린 파일이 줄마다 쌓이는 목록",W(`<div class="e-files"><p><i>PDF</i><span>과제1.pdf<b></b></span></p><p><i style="background:#1FA463">XLS</i><span>명단.xlsx<b style="animation-delay:.6s"></b></span></p></div>`),"올린 파일을 줄마다 이름·종류·올라가는 막대로 보여 주는 파일 목록을 만들어줘"],
+  ["체크리스트","Checklist","하나씩 체크하면 줄이 그어지는 목록",W(`<div class="e-chk" data-cyc data-mode="fill" data-ms="700"><p class="c"><i></i>운동화</p><p class="c"><i></i>물병</p><p class="c"><i></i>모자</p></div>`),"준비물을 체크리스트로, 체크하면 줄이 그어지게 해줘"],
+  ["순서 바꾸기","Sortable List","줄을 잡아 끌어 순서 바꾸기",W(`<div class="e-sort"><p class="a"><i>⋮⋮</i>김하늘</p><p class="b"><i>⋮⋮</i>이도윤</p><p class="z"><i>⋮⋮</i>박서연</p></div>`),"발표 순서를 줄 왼쪽 손잡이를 잡고 끌어서 바꾸게 해줘"],
+  ["주소 찾기","Address Search","도로명을 치면 주소 후보가 뜨는 칸",W(`<div class="e-addr"><div class="e-in round">${SV.lens}<span class="ty" data-t="중앙로 12"></span><i class="caret"></i></div><div class="ls"><p><b>우편 39100</b>중앙로 12</p><p><b>우편 39102</b>중앙로 12-1</p></div></div>`),"주소칸에 도로명을 치면 아래에 주소 후보가 뜨는 주소 찾기를 붙여줘"]],
+ 1:[
+  ["전체 선택","Select All","맨 위 체크 하나로 모두 고르기",W(`<div class="e-all"><p class="h"><i></i>전체 선택</p><p><i></i>김하늘</p><p><i></i>이도윤</p><p><i></i>박서연</p></div>`,C('10px','12px',3.4,.3)),"명단 맨 위에 전체 선택 체크박스를 두고 누르면 모두 체크되게 해줘"]],
+ 2:[
+  ["하단 고정 단추","Sticky CTA","스크롤해도 아래에 붙어 있는 큰 단추",SCR(`<div class="inf">${'<i></i>'.repeat(10)}</div><span class="scta">신청하기</span>`),"폰에서는 ‘신청하기’ 단추를 화면 아래에 고정해서 언제든 누르게 해줘"]],
+ 3:[
+  ["전체 화면","Fullscreen","한 부분을 화면 가득 키우기",SCR(`${LS(10,22,34,46)}<i class="fsx"></i>`),"발표 화면은 단추 하나로 전체 화면이 되게 해줘"],
+  ["크기 조절 창","Resizable Panel","경계를 끌어 창 크기 바꾸기",SCR(`${LS(40,52,64)}<div class="rzt"></div><i class="rzh"></i>`),"위 미리보기와 아래 편집 칸 사이 경계를 끌어 크기를 바꾸게 해줘"],
+  ["접는 사이드바","Collapsible Sidebar","옆 메뉴를 아이콘만 남기고 접기",SCR(`<div class="csb"><i></i><i></i><i></i><i></i></div>${RL(12,24,36,48)}`),"왼쪽 사이드바를 접으면 아이콘만 남는 접는 사이드바로 만들어줘"]],
+ 6:[
+  ["업로드 진행","Upload Progress","올리는 중 → 다 올렸어요",W(`<div class="e-upr"><small><span>사진 12장 올리는 중</span><span>다 올렸어요</span></small><i></i></div>`),"사진을 올리는 동안 진행 막대와 ‘올리는 중’을, 끝나면 ‘다 올렸어요’를 보여줘"],
+  ["오프라인 표시","Offline Banner","인터넷이 끊기면 아래에 띠",SCR(`${LS(10,22,34)}<div class="ofa">연결이 끊겼어요</div><div class="ofb">다시 연결됐어요</div>`),"인터넷이 끊기면 아래에 회색 띠로 알리고, 다시 붙으면 초록으로 바꿔줘"],
+  ["자동 저장 표시","Autosave","쓰는 대로 저장 중 → 저장됨",W(`<div class="e-svw"><div class="e-in"><span class="ty" data-t="오늘 회의록"></span><i class="caret"></i></div><div class="e-save"><span class="s1"><i></i>저장 중</span><span class="s2">✓ 모두 저장됨</span></div></div>`),"글을 쓰면 자동 저장하고 칸 아래에 ‘저장 중 → 모두 저장됨’을 보여줘"],
+  ["쿠키 안내","Cookie Banner","처음 들어오면 아래에 뜨는 동의 상자",SCR(`${LS(10,22,34)}<div class="ck"><span>쿠키를 써도 될까요?</span><b>거절</b><b class="y">허용</b></div>`),"처음 들어오면 아래에 허용·거절 단추가 있는 쿠키 안내를 띄워줘"]],
+ 7:[
+  ["비교표","Comparison Table","여러 선택지를 칸별로 나란히",W(`<div class="e-cmp"><div class="h"><span></span><span>기본</span><span class="pk">프로</span></div><div><span>저장</span><span>1GB</span><span class="pk">10GB</span></div><div><span>공유</span><span>—</span><span class="pk">✓</span></div><div><span>지원</span><span>—</span><span class="pk">✓</span></div></div>`),"요금제를 비교표로 나란히 놓고 추천하는 칸만 색으로 강조해줘"],
+  ["가격표","Pricing Card","가격·혜택·단추를 한 장에",W(`<div class="e-price"><em>추천</em><small>학급용</small><b>9,900<span>원/월</span></b><i>시작하기</i></div>`),"요금제를 가격표 카드로, 추천 카드에는 ‘추천’ 배지를 달아줘"],
+  ["자주 묻는 질문","FAQ","질문을 누르면 답이 펼쳐짐",W(`<div class="e-faq"><div class="q"><b>Q</b>준비물이 있나요?<i>+</i></div><p>운동화와 물병을 챙겨요.</p><div class="q"><b>Q</b>비가 오면요?<i style="animation:none">+</i></div></div>`),"맨 아래에 자주 묻는 질문을 두고 질문을 누르면 답이 펼쳐지게 해줘"],
+  ["변경 내역","Changelog","판마다 무엇이 바뀌었는지",W(`<div class="e-log"><p class="nw"><b>v1.3</b>사진 올리기</p><p><b>v1.2</b>검색 빨라짐</p><p><b>v1.1</b>오류 고침</p></div>`),"설정 화면에 판 번호별로 바뀐 점을 보여 주는 변경 내역을 넣어줘"],
+  ["단계별 안내","How It Works","1·2·3 순서로 쓰는 법 설명",W(`<div class="e-how" data-cyc data-mode="one" data-ms="900"><div class="c"><b>1</b>가입</div><em>›</em><div class="c"><b>2</b>반 만들기</div><em>›</em><div class="c"><b>3</b>초대</div></div>`),"첫 화면에 쓰는 법을 1·2·3 단계별 안내로 짧게 보여줘"]],
+ 8:[
+  ["스크롤 스냅","Scroll Snap","내리면 한 화면씩 착 붙어 멈춤",SCR(`<div class="snp"><i></i><i></i><i></i></div>`),"카드를 넘길 때 한 장씩 착 붙어 멈추는 스크롤 스냅으로 해줘"],
+  ["화면 전환","Page Transition","다음 화면이 옆에서 밀고 들어옴",SCR(`<div class="pgA">${LS(10,22,34)}</div><div class="pgB">${LS(10,22,34)}</div>`),"목록에서 상세로 갈 때 다음 화면이 오른쪽에서 밀고 들어오게 해줘"]],
+ 9:[
+  ["누적 막대","Stacked Bar","한 막대 안에 여러 몫을 쌓기",W(`<div class="e-stk">${[[30,25,20],[40,20,25],[25,30,30],[45,25,15]].map((s,i)=>`<div style="animation-delay:${(i*0.12).toFixed(2)}s">${s.map((h,j)=>`<i style="height:${h}%;background:${['var(--c)','#F2602B','#E5A100'][j]}"></i>`).join('')}</div>`).join('')}</div>`),"반별 출석·지각·결석을 누적 막대로 한 막대에 쌓아 보여줘"],
+  ["산점도","Scatter Plot","점을 흩뿌려 두 값의 관계 보기",W(`<div class="e-sct"><svg viewBox="0 0 140 84"><line class="ax" x1="8" y1="78" x2="136" y2="78"/><line class="ax" x1="8" y1="4" x2="8" y2="78"/><line class="tr" x1="14" y1="70" x2="132" y2="14"/>${SCT.map((p,i)=>`<circle cx="${p[0]}" cy="${p[1]}" r="3.6" style="animation-delay:${(i*0.07).toFixed(2)}s"/>`).join('')}</svg></div>`),"공부 시간과 점수를 산점도로 그리고 흐름선을 점선으로 넣어줘"],
+  ["레이더 차트","Radar Chart","여러 능력을 거미줄 모양으로",W(`<div class="e-rad">${radar()}</div>`),"체력 다섯 가지를 레이더 차트로 한눈에 보여줘"],
+  ["퍼널","Funnel","단계마다 얼마나 남는지",W(`<div class="e-fun">${[[100,'방문 320',100],[80,'가입 210',85],[62,'참여 120',72],[46,'완료 60',60]].map((f,i)=>`<i style="width:${f[0]}%;--o:${f[2]}%;animation-delay:${(i*0.15).toFixed(2)}s">${f[1]}</i>`).join('')}</div>`),"신청 과정을 방문→가입→참여→완료 퍼널로, 단계마다 남은 수를 보여줘"]]
+};
+Object.entries(ADD5).forEach(([i,a])=>GROUPS[+i].items.push(...a));
+
+TCOL["그래프"]="#12B886";
+TERMS.push(
+ ["그래프","축","Axis","그래프의 가로·세로 기준선","세로축은 0부터 시작하게 해줘"],
+ ["그래프","범례","Legend","색이 무엇을 뜻하는지 알려 주는 표","범례는 그래프 위쪽에 한 줄로"],
+ ["그래프","값 표시","Data Label","막대·점 위에 숫자를 직접 쓰기","막대 끝에 값 표시를 붙여줘"],
+ ["그래프","누적 막대","Stacked Bar","한 막대 안에 여러 몫을 쌓은 그래프","출석·지각·결석을 누적 막대로"],
+ ["그래프","산점도","Scatter Plot","두 값의 관계를 점으로 보는 그래프","공부 시간과 점수를 산점도로"],
+ ["그래프","레이더 차트","Radar Chart","여러 항목을 거미줄 모양으로 비교","체력 항목을 레이더 차트로"],
+ ["그래프","퍼널","Funnel","단계마다 줄어드는 수를 보여 주는 깔때기","신청 단계를 퍼널로 보여줘"],
+ ["그래프","잔디 그래프","Heatmap","칸 색 진하기로 많고 적음을 보기","날마다 활동을 잔디 그래프로"],
+ ["그래프","그래프 고르기","Chart Choice","비교는 막대, 흐름은 꺾은선, 비율은 도넛","이 자료에 맞는 그래프를 골라서 그려줘"],
+ ["그래프","툴팁 값","Chart Tooltip","점에 올리면 정확한 숫자가 뜨는 것","그래프 점에 올리면 날짜와 값이 뜨게"],
+ ["UI 요소","비교표","Comparison Table","선택지를 칸별로 나란히 놓은 표","요금제를 비교표로"],
+ ["UI 요소","가격표","Pricing Card","가격·혜택·단추를 한 장에","요금제를 가격표 카드 세 장으로"],
+ ["UI 요소","FAQ","Frequently Asked Questions","자주 묻는 질문 모음","맨 아래에 FAQ를 아코디언으로"],
+ ["UI 요소","변경 내역","Changelog","판마다 바뀐 점을 적은 목록","설정에 변경 내역을 넣어줘"],
+ ["UI 요소","하단 고정 단추","Sticky CTA","스크롤해도 아래에 붙은 큰 단추","신청하기 단추를 아래에 고정해줘"],
+ ["UI 요소","쿠키 안내","Cookie Banner","쿠키를 써도 되는지 묻는 상자","처음 들어오면 쿠키 안내를 띄워줘"],
+ ["움직임","스크롤 스냅","Scroll Snap","한 화면씩 착 붙어 멈추는 스크롤","카드를 스크롤 스냅으로 넘기게"],
+ ["꿀팁","자동 저장","Autosave","저장 단추 없이 쓰는 대로 저장","입력하면 자동 저장되게 해줘"],
+ ["꿀팁","오프라인 대비","Offline Support","인터넷이 끊겨도 쓰던 내용이 남게","인터넷이 끊겨도 쓰던 글이 사라지지 않게"],
+ ["꿀팁","빈칸 막기","Required Field","꼭 넣어야 하는 칸 표시와 확인","이름은 필수 칸으로, 비우면 알려줘"]
+);
 
 /* ---------- 그리기 ---------- */
 const FLAT=[];GROUPS.forEach((g,gi)=>g.items.forEach(it=>FLAT.push({g,gi,it})));
